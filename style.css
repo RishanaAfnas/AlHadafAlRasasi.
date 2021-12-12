@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+    
+    margin: 0 ;
+    padding: 0;
+    overflow-x:hidden !important ;
+   
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    
+   
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700 !important;
+   /* color: rgb(236, 14, 25) !important;*/
+   color: black !important
+   ;
+   overflow: hidden;
+}
+h2{
+    font-size: 1.8rem !important;
+    font-weight:bold !important;
+    line-height: 60px !important;
+    overflow: hidden;
+   
+}
+h3{
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    overflow: hidden;
+}
+h4{
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    overflow: hidden !important;
+
+}
+h5{
+    font-size: 1.5rem !important;
+    font-weight: 400 ;
+    color:black !important ;
+    overflow: hidden;
+}
+h6{
+   color: #d8d8d8;
+   overflow: hidden;
+}
+hr{
+  
+    background-color:rgb(209, 39, 47) ;
+    height: 5px !important;
+    width: 80px;
+    border-radius: 5px;
+margin-top: 1px !important;
+    
+}
+  button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    background:black ;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px !important;
+    transition-duration: 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(209, 39, 47);
+
+}
+.navbar {
+    font-size: 18px;
+    font-weight: 500;
+    /*top: 0;
+    left: 0;*/
+   /* background:rgb(205, 206, 211);*/
+   background:#fff
+   ;
+  
+   
+ 
+
+   
+    
+
+
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px !important;
+    color:black !important;
+    transition: 0.3s ease !important;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+    color: rgb(228, 7, 18) !important;
+}
+
+/*mobile nav*/
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+    
+
+}
+
+
+
+#bar{
+    font-size: 1.7rem;
+    padding: 7px;
+    cursor: pointer;
+    
+    font-weight: 700;
+    transition: 0.3sec ease;
+    color: black;
+    
+}
+#bar:hover,#bar.active{
+    color: #fff;
+}
+@media only screen and (max-width:991px){
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: black;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: #fff;
+    }
+   #navbarSupportedContent > ul {
+       
+       
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 5px 0 !important;
+        
+       
+    }
+    .card{
+       margin: auto !important
+       ;
+      
+       
+    }
+    #brand img{
+        padding: 5px 30px !important;
+        width: 100% !important;
+    }
+   
+    
+    
+
+
+    
+}
+
+
+
+#home{
+    background-image: url(images/4.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:top 30px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-start;
+    /*background-attachment: fixed;*/
+}
+#home span{
+    color: rgb(209, 39, 47);
+    font-weight: 700;
+    
+}
+.label{
+    margin-top: 200px;
+    
+}
+#brand img{
+    padding: 5px 50px ;
+    width: 100%;
+    cursor: pointer;
+    
+    filter: grayscale(0);
+
+}
+#brand img:hover{
+    
+    filter: grayscale(100%);
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 00.3sec ease;
+}
+#new .one:hover {
+   
+    cursor: pointer;
+   
+    opacity: 0.7;
+}
+#new .one h3{
+    color: #2a2a2a;
+    background:  #fff;
+   
+    
+    padding: 0 25px;
+    border-radius: 1px;
+    line-height: 35px;
+    font-weight: bold !important;
+    
+    
+    
+}
+
+
+
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+    #featured .row img{
+        padding-top: 100px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .p-name{
+        position: relative;
+    }
+    .card{
+       
+        border: none !important;
+        
+    }
+   .card img{
+       transition: 00.3sec all;
+       cursor: pointer;
+   }
+   .card:hover img{
+       opacity: 0.7;
+   }
+   #banner span{
+       font-weight: 700;
+       color: #fff;
+   }
+   #banner{
+    background-image: url(images/banner_image.png);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position:top 70px right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-start;
+    background-attachment: fixed;
+
+   }
+   #banner{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+   }
+   
+   #banner h1{
+       font-style: italic;
+       font-size: 4rem !important;
+       align-items: center;
+       color: #fff !important;
+   }
+   footer{
+       background-color: #222222;
+   }
+   footer h5{
+       color: #D8D8D8 !important;
+       font-weight: 700 !important;
+       font-size: 1.2rem !important;
+   }
+   footer h6{
+     color: #D8D8D8 !important;
+
+   }
+   footer ul{
+       list-style: none;
+   }
+   footer li{
+       padding-bottom: 4px;
+   }
+   footer li a{
+    font-size: 0.8rem;
+    color: #D8D8D8;
+    text-decoration: none !important;
+   } 
+   footer li a:hover{
+       color: #fff;
+   }
+   footer p{
+       color: #D8D8D8;
+       font-size: 0.8rem;
+       
+      
+     
+   }
+   body > footer > div.copyright.mt-5 > div > div.col-lg-4.col-md-6.col-12.text-nowrap.mb-4 > p{
+   
+   }
+   footer .copyright a{
+       color: #000;
+       width: 42px;
+       height: 42px;
+       background-color: #fff;
+       display: inline-block;
+       text-align: center;
+       line-height: 42px;
+       border-radius: 50%;
+       transition: 0.3sec ease;
+       margin: 0 5px;
+   }
+   footer .copyright a:hover{
+       color: #fff;
+       background-color: rgb(209, 39, 47);
+   }
+   #myBtn {
+   /* display: inline-block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#0cbe65; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px 9px; /* Some padding */
+    border-radius:50%; /* Rounded corners */
+    font-size: 35px; /* Increase font size */
+    padding-bottom: 0px;
+    padding-top: 7px;
+   text-align: center;
+    
+  }
+  #myBtn:hover{
+      background-color: #0b8146;
+
+  }
+  /*#mwicon{
+      border: 1px solid black;
+      background: green;
+  }8/
+ /* #featured > nav > ul > li.page-item.active > a{
+      background-color: rgb(52, 58, 64);
+  }
+  #featured > nav > ul > li.page-item.active > a:nth-child(n):hover{
+      background-color:rgb(209, 39, 47) ;
+  }*/
+  .page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #343a40;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+}
+.page-btn span:hover{
+    
+    background: rgb(209, 39, 47);
+    color: #fff;
+    border: 1px solid rgb(209, 39, 47);
+}
+.page-btn span.active{
+    background-color:#343a40 ;
+    color: #fff;
+}
+.page-btn a{
+    color: #fff;
+}
+.contact-form{
+  padding-top: 6rem !important;
+}
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+  }
+  
+  .fade.show {
+    opacity: 1;
+  }
+
+
+   
+   
+   
+   
+   
+    
+ 
+   
+    
+
+
+
+
+
+
+
